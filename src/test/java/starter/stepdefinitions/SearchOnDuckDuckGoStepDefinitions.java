@@ -18,15 +18,16 @@ import static starter.matchers.StringContainsIgnoringCase.containsIgnoringCase;
 
 public class SearchOnDuckDuckGoStepDefinitions {
 
-    @BeforeStory
+   /* @BeforeStory
     public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
-    }
+    }*/
 
     @Given("$actor is on the DuckDuckGo home page")
     public void on_the_DuckDuckGo_home_page(String actor) {
         theActorCalled(actor).attemptsTo(NavigateTo.theDuckDuckGoHomePage());
     }
+
 
     @When("he searches for \"$keyword\"")
     public void search_for(String term) {

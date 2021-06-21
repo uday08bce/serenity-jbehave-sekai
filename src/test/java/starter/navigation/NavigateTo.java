@@ -11,4 +11,10 @@ public class NavigateTo  {
                 Open.browserOn().the(DuckDuckGoHomePage.class)
         );
     }
+
+    public static Performable theSekaiHomePage() {
+        return Task.where("{0} opens the Sekai home page",
+                Open.browserOn().the(SekaiHomePage.class)
+        );
+    }
 }
